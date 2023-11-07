@@ -1,4 +1,4 @@
-- name: variables demo
+- name: Demo on variables
   hosts: localhost
   vars:
     URL: nabi.com
@@ -9,3 +9,17 @@
 
 # values start with variables then use quotes like msd: "{{ URL }}",
 #if it does not start with variable like msg: Hello "{{ URL }}" no need
+
+- name: Demo on task variables
+  hosts: localhost
+  tasks:
+    - name: URL1 variable
+      ansible.builtin.debug:
+        msg: "{{ URL1 }}"
+      vars:
+        URL1: sample.com
+    - name: URL2 variable
+      ansible.builtin.debug:
+        msg: "{{ URL2 }}"
+      vars:
+        URL2: sample.com
