@@ -1,0 +1,11 @@
+- name: variables demo
+  hosts: all
+  vars:
+    URL: nabi.com
+  tasks:
+    - name: print URL variables
+      ansible.builtin.debug:
+        msg: "{{ URL }}"
+
+# values start with variables then use quotes like msd: "{{ URL }}",
+#if it does not start with variable like msg: Hello "{{ URL }}" no need
