@@ -1,5 +1,5 @@
 - name: variables demo
-  hosts: all
+  hosts: localhost
   vars:
     URL: nabi.com
   tasks:
