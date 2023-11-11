@@ -1,5 +1,5 @@
 - name: Demo on AWS SSM parameter pull
-  hosts: all
+  hosts: localhost
   tasks:
     - name: Lookup ssm parameters store in the current region
       debug: msg="{{ lookup('amazon.aws.aws_ssm', 'sample' ) }}"
