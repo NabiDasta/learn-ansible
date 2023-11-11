@@ -5,5 +5,5 @@
       ansible.builtin.debug:
         msg: Nabi, Linux
     - name: Print Unix
-      ansbile.builtin.debug:
+      ansible.builtin.debug:
         msg: test, Unix
