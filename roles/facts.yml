@@ -1,0 +1,6 @@
+- name: Demo on facts
+  hosts: localhost
+  tasks:
+    - name: print the bio version
+      ansible.builtin.debug:
+        msg: "{{ ansible_bios_version }}"
