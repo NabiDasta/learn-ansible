@@ -1,0 +1,7 @@
+- name: demo on filters
+  hosts: localhost
+  tasks:
+    - name: sample test on filters
+      ansible.builtin.shell: uptime
+
+
