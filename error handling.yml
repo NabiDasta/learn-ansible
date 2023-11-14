@@ -1,0 +1,10 @@
+- name: demo on error handlings
+  hosts: localhost
+  tasks:
+    - name: Executing ls command sample
+      ansible.builtin.shell: lss
+      ignore_errors: yes
+
+    - name: Print Nabi
+      ansible.builtin.debug:
+        msg: Nabi
