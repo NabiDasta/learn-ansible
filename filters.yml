@@ -3,12 +3,12 @@
   tasks:
     - name: sample test on filters
       ansible.builtin.shell: uptime
-      register: out
+      register: in
 
 
     - name: print how many members login
       ansible.builtin.debug:
-        msg: "{{ out }}"
+        msg: "{{ in }}"
 
 
 
