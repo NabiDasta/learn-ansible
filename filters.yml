@@ -7,7 +7,7 @@
 
     - name: print how many members login
       ansible.builtin.debug:
-        msg: "{{ result.stdout | split(',') }}"
+        msg: "{{ (result.stdout | split(','))[2] }}"
 
 
 
