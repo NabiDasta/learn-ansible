@@ -5,10 +5,9 @@
       ansible.builtin.shell: uptime
       register: result
 
-
     - name: print how many members login
       ansible.builtin.debug:
-        msg: "{{ result }}"
+        msg: "{{ result.stdout | split(',') }}"
 
 
 
